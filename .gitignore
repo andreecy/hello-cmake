@@ -1,0 +1,7 @@
+# cmake project
+build
+CMakeFiles
+CMakeCache.txt
+
+# editor
+.vscode

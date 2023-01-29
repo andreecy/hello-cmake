@@ -1,0 +1,10 @@
+# create project
+project(mylib)
+# project source file defined as library
+add_library(mylib mylib.c mylib.h)
+# set property
+set_target_properties(mylib PROPERTIES
+    PUBLIC_HEADER mylib.h
+)
+# add header files to include directory for linking from static library 
+# file(COPY mylib.h DESTINATION "include")

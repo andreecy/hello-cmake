@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+# Create project
+project(app)
+# project source files
+add_executable(app main.c)
+
+# add library subdirectory to build
+add_subdirectory(mylib)
+# add header files to include directory
+target_include_directories(app PRIVATE mylib)
+# link library
+target_link_libraries(app mylib)
